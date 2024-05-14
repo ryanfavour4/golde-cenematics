@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #cc7f2e;
+    --primary-rgb: 204 127 46;
+
+    --dark: #121212;
+    --dark-rgb: 18 18 18;
+
+    --light: #fafafa;
+    --light-rgb: 250 250 250;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.1s ease-in-out;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+#root {
+    min-height: 100vh;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-oswald {
+    font-family: "Oswald", sans-serif;
+}
+
+.breaker {
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphenate-limit-chars: 8 2;
+    hyphens: auto;
+    line-break: strict;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    hanging-punctuation: first;
+    line-clamp: 3;
+    text-overflow: ellipsis;
+}
+
+.wrapper {
+    width: 98%;
+    max-width: 1300px;
+    margin: auto;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}
+
