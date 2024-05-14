@@ -5,14 +5,7 @@
 @tailwind utilities;
 
 :root {
-    --primary: #cc7f2e;
-    --primary-rgb: 204 127 46;
-
-    --dark: #121212;
-    --dark-rgb: 18 18 18;
-
-    --light: #fafafa;
-    --light-rgb: 250 250 250;
+    --light: #FFFFFF;
 }
 
 * {
@@ -27,8 +20,6 @@ html {
     overflow-x: hidden;
     min-height: 100vh;
     scroll-behavior: smooth;
-    color: var(--light);
-    background-color: var(--dark);
 }
 
 #root {
@@ -37,16 +28,10 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
-    position: relative;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    width: 100%;
     overflow: hidden;
     font-size: 16px;
 }
@@ -61,18 +46,6 @@ h6,
     font-family: "Oswald", sans-serif;
 }
 
-.breaker {
-    word-wrap: break-word;
-    word-break: break-all;
-    hyphenate-limit-chars: 8 2;
-    hyphens: auto;
-    line-break: strict;
-    overflow-wrap: break-word;
-    white-space: break-spaces;
-    hanging-punctuation: first;
-    line-clamp: 3;
-    text-overflow: ellipsis;
-}
 
 .wrapper {
     width: 98%;
@@ -80,7 +53,62 @@ h6,
     margin: auto;
     height: 100%;
 }
+.nav{
+     background: #525AA0;
+}
 
+input#customPlaceholder::placeholder {
+    color: transparent;
+}
+
+input#customPlaceholder::before {
+    content: 'Looking for ';
+    color: black;
+    font-weight: bold;
+}
+
+input#customPlaceholder::after {
+    content: ' design |';
+    color: grey;
+}
+
+.slanted-lines-container {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+}
+
+.slanted-lines-container::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200px; /* Adjust the height as needed */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(-5deg) translateY(-50%); /* Adjust the angle and position as needed */
+    transform-origin: top right;
+}
+
+.slanted-lines-container::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 2px;
+    background: rgba(0, 0, 255, 0.5);
+    transform: rotate(-5deg) translateY(20px); /* Adjust the angle and position as needed */
+    transform-origin: top right;
+    box-shadow: 
+        0 20px 0 rgba(0, 0, 255, 0.5),
+        0 40px 0 rgba(0, 0, 255, 0.5),
+        0 60px 0 rgba(0, 0, 255, 0.5),
+        0 80px 0 rgba(0, 0, 255, 0.5),
+        0 100px 0 rgba(0, 0, 255, 0.5),
+        0 120px 0 rgba(0, 0, 255, 0.5);
+}
+
+.market-section-bg {
+    background-color:#EDEFFF ;
+}
 @media only screen and (max-width: 600px) {
     body {
         font-size: 15px;
