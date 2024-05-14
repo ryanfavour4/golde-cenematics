@@ -38,11 +38,11 @@ export default function LandingPage() {
                     <a
                         href="http://google.com"
                         target="_blank"
-                        className="absolute w-16 top-1/2 bottom-1/2 left-1/2 right-1/2 animate-pulse hover:animate-none"
+                        className="absolute w-16 top-1/2 bottom-1/2 left-1/2 right-1/2 translate-1/2 translate-y-1/2 animate-pulse hover:animate-none"
                         rel="noopener noreferrer"
                     >
                         <img
-                            className=""
+                            className="w-10 md:w-20"
                             src={trianglePlay}
                             alt="triangle play"
                         />
