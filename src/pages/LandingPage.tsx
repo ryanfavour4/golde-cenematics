@@ -56,13 +56,25 @@ export default function LandingPage() {
                 </div>
                 {/* Sponsor Logo */}
                 <div className="wrapper md:w-4/5 w-full border-x border-primary p-10" />
-                <div className="p-6 border border-primary flex items-center justify-between wrapper">
+                <div className="p-6 border border-primary flex items-center md:justify-between justify-center wrapper md:gap-0 gap-4 md:flex-nowrap flex-wrap">
                     <img className="w-fit h-11" src={chevrolet} alt="" />
                     <img className="w-fit h-11" src={newbalance} alt="" />
                     <img className="w-fit h-11" src={strega} alt="" />
                     <img className="w-fit h-11" src={dunejewelry} alt="" />
                     <img className="w-fit h-11" src={umass} alt="" />
                     <img className="w-fit h-9" src={bostonlogan} alt="" />
+                </div>
+                {/* Our Story */}
+                <div className="pt-52">
+                    <div className="uppercase border border-primary bg-primary/10 w-fit py-2 px-4 font-light text-xl m-auto">
+                        <h3>Our Story</h3>
+                    </div>
+
+                    <h1 className="text-4xl md:text-8xl text-center uppercase mt-7 mb-7">
+                        Meet <span className="text-primary">John</span>
+                    </h1>
+
+                    <div className=""></div>
                 </div>
             </div>
         </div>
