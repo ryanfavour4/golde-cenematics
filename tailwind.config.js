@@ -9,10 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#CC7F2E",
-        secondary: "null",
+        primary: "#525AA0",
+        secondary: "#EDEFFF",
         complementary: "null",
-        dark: "#121212",
+        dark: "#202229",
         light: "#FAFAFA"
       },
       translate: ['group-hover', 'hover']

@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .btn-icon {
+        @apply bg-light hover:opacity-80 text-center py-4 px-3 shadow rounded-2xl font-medium hover:shadow-md border border-gray-100 hover:border-gray-300 transition-all;
+    }
+}
+
 :root {
-    --light: #FFFFFF;
+    --light: #ffffff;
 }
 
 * {
@@ -43,9 +49,8 @@ h4,
 h5,
 h6,
 .font-oswald {
-    font-family: "Oswald", sans-serif;
+    font-family: "Public Sans", sans-serif;
 }
-
 
 .wrapper {
     width: 98%;
@@ -53,8 +58,8 @@ h6,
     margin: auto;
     height: 100%;
 }
-.nav{
-     background: #525AA0;
+.nav {
+    background: #525aa0;
 }
 
 input#customPlaceholder::placeholder {
@@ -62,13 +67,13 @@ input#customPlaceholder::placeholder {
 }
 
 input#customPlaceholder::before {
-    content: 'Looking for ';
+    content: "Looking for ";
     color: black;
     font-weight: bold;
 }
 
 input#customPlaceholder::after {
-    content: ' design |';
+    content: " design |";
     color: grey;
 }
 
@@ -80,38 +85,38 @@ input#customPlaceholder::after {
 }
 
 .slanted-lines-container::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 200%;
     height: 200px; /* Adjust the height as needed */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
     transform: rotate(-5deg) translateY(-50%); /* Adjust the angle and position as needed */
     transform-origin: top right;
 }
 
 .slanted-lines-container::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 200%;
     height: 2px;
     background: rgba(0, 0, 255, 0.5);
     transform: rotate(-5deg) translateY(20px); /* Adjust the angle and position as needed */
     transform-origin: top right;
-    box-shadow: 
-        0 20px 0 rgba(0, 0, 255, 0.5),
-        0 40px 0 rgba(0, 0, 255, 0.5),
-        0 60px 0 rgba(0, 0, 255, 0.5),
-        0 80px 0 rgba(0, 0, 255, 0.5),
-        0 100px 0 rgba(0, 0, 255, 0.5),
-        0 120px 0 rgba(0, 0, 255, 0.5);
+    box-shadow: 0 20px 0 rgba(0, 0, 255, 0.5), 0 40px 0 rgba(0, 0, 255, 0.5),
+        0 60px 0 rgba(0, 0, 255, 0.5), 0 80px 0 rgba(0, 0, 255, 0.5),
+        0 100px 0 rgba(0, 0, 255, 0.5), 0 120px 0 rgba(0, 0, 255, 0.5);
 }
 
 .market-section-bg {
-    background-color:#EDEFFF ;
+    background-color: #edefff;
 }
 @media only screen and (max-width: 600px) {
     body {
         font-size: 15px;
     }
 }
-
