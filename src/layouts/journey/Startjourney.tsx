@@ -15,22 +15,22 @@ export default function StartJourney() {
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="absolute inset-0 bg-purple-50 transform -skew-y-2"></div>
           <div className="relative md:w-1/2 p-8 md:p-16 text-left">
-            <div className="flex flex-col mb-4">
-              <div className="flex items-center mb-4">
-                <h3 className="text-6xl md:text-9xl font-bold text-purple-200 mr-4">1</h3>
-                <h3 className="text-3xl md:text-5xl font-bold text-black">
-                  Find your next<br /> star performer.
+            <div className="flex items-start mb-4">
+              <h3 className="text-6xl md:text-9xl font-bold text-purple-200 mr-4">1</h3>
+              <div>
+                <h3 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+                  Find your next star performer.
                 </h3>
+                <p className="text-sm md:text-base text-gray-600 mt-2 mb-4">
+                  Explore the vast Zwilt marketplace to find the candidate that meets your needs.
+                </p>
+                <div className="flex items-center">
+                  <button className="flex items-center text-black px-4 py-2 rounded-md bg-transparent">
+                    Join Now
+                    <img src={explore} alt="Join Now" className="h-4 w-4 md:h-6 md:w-6 ml-2" />
+                  </button>
+                </div>
               </div>
-              <p className="text-sm md:text-base text-gray-600">
-                Explore the vast Zwilt marketplace<br /> to find the candidate that meets your needs.
-              </p>
-            </div>
-            <div className="flex items-center">
-              <button className="flex items-center text-black px-4 py-2 rounded-md bg-transparent">
-                Join Now
-                <img src={explore} alt="Join Now" className="h-4 w-4 md:h-6 md:w-6 ml-2" />
-              </button>
             </div>
           </div>
           <div className="relative md:w-1/2 flex justify-center mt-4 md:mt-0">
@@ -41,22 +41,22 @@ export default function StartJourney() {
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="absolute inset-0 bg-yellow-50 transform -skew-y-2"></div>
           <div className="relative md:w-1/2 p-8 md:p-16 text-left">
-            <div className="flex flex-col mb-4">
-              <div className="flex items-center mb-4">
-                <h3 className="text-6xl md:text-9xl font-bold text-yellow-200 mr-4">2</h3>
-                <h3 className="text-3xl md:text-5xl font-bold text-black">
-                  Evaluate to your heart’s<br /> content.
+            <div className="flex items-start mb-4">
+              <h3 className="text-6xl md:text-9xl font-bold text-yellow-200 mr-4">2</h3>
+              <div>
+                <h3 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+                  Evaluate to your heart’s content.
                 </h3>
+                <p className="text-sm md:text-base text-gray-600 mt-2 mb-4">
+                  Assess the candidate through work history, transparent tests, and video interviews.
+                </p>
+                <div className="flex items-center">
+                  <button className="flex items-center text-black px-4 py-2 rounded-md bg-transparent">
+                    Browse More
+                    <img src={explore} alt="Browse More" className="h-4 w-4 md:h-6 md:w-6 ml-2" />
+                  </button>
+                </div>
               </div>
-              <p className="text-sm md:text-base text-gray-600">
-                Assess the candidate through work history,<br /> transparent tests, and video interviews.
-              </p>
-            </div>
-            <div className="flex items-center">
-              <button className="flex items-center text-black px-4 py-2 rounded-md bg-transparent">
-                Browse More
-                <img src={explore} alt="Browse More" className="h-4 w-4 md:h-6 md:w-6 ml-2" />
-              </button>
             </div>
           </div>
           <div className="relative md:w-1/2 flex justify-center mt-4 md:mt-0">
@@ -67,22 +67,22 @@ export default function StartJourney() {
         <div className="relative flex flex-col md:flex-row items-center">
           <div className="absolute inset-0 bg-gray-50 transform -skew-y-2"></div>
           <div className="relative md:w-1/2 p-8 md:p-16 text-left">
-            <div className="flex flex-col mb-4">
-              <div className="flex items-center mb-4">
-                <h3 className="text-6xl md:text-9xl font-bold text-gray-200 mr-4">3</h3>
-                <h3 className="text-3xl md:text-5xl font-bold text-black">
-                  Start building<br /> your team.
+            <div className="flex items-start mb-4">
+              <h3 className="text-6xl md:text-9xl font-bold text-gray-200 mr-4">3</h3>
+              <div>
+                <h3 className="text-3xl md:text-5xl font-bold text-black leading-tight">
+                  Start building your team.
                 </h3>
+                <p className="text-sm md:text-base text-gray-600 mt-2 mb-4">
+                  Onboard your candidate right away and start creating the next big thing.
+                </p>
+                <div className="flex items-center">
+                  <button className="flex items-center text-black px-4 py-2 rounded-md bg-transparent">
+                    Join Now
+                    <img src={explore} alt="Join Now" className="h-4 w-4 md:h-6 md:w-6 ml-2" />
+                  </button>
+                </div>
               </div>
-              <p className="text-sm md:text-base text-gray-600">
-                Onboard your candidate right away<br /> and start creating the next big thing.
-              </p>
-            </div>
-            <div className="flex items-center">
-              <button className="flex items-center text-black px-4 py-2 rounded-md bg-transparent">
-                Join Now
-                <img src={explore} alt="Join Now" className="h-4 w-4 md:h-6 md:w-6 ml-2" />
-              </button>
             </div>
           </div>
           <div className="relative md:w-1/2 flex justify-center mt-4 md:mt-0">
