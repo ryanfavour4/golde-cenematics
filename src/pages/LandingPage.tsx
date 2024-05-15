@@ -1,6 +1,10 @@
+import Groove from "@layouts/groove/Groove";
 import HeroSection from "@layouts/hero-section/HeroSection";
+import StartJourney from "@layouts/journey/Startjourney";
 import Marketplace from "@layouts/market-section/MarketSection";
 import Navbar from "@layouts/navbar/Navbar";
+import ScreeningProcess from "@layouts/screeningprocess/ScreeningProcess";
+import WhyChooseZwilt from "@layouts/WhyChooseZwilt/WhyChooseZwilt";
 
 export default function LandingPage() {
     return (
@@ -11,11 +15,17 @@ export default function LandingPage() {
                     <Navbar />
                     <HeroSection/>
                 </div>
-                {/* <div className="slanted-lines-container w-full h-48 mt-8"></div> */}
                 {/* Marketplace */}
                 <div className="market-section-bg">
                     <Marketplace/>
                 </div>
+                {/* {groove} */}
+               <div className="groove-bg">
+               <Groove/>
+               </div>
+               <ScreeningProcess/>
+               <StartJourney/>
+               <WhyChooseZwilt/>
             </div>
         </div>
     );
