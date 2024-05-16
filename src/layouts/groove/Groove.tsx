@@ -1,3 +1,6 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import grooveLogo from "@image/groove.png";
 import person2 from "@image/Frame 136.png";
 import groovetext from "@image/groovehq.png";
@@ -5,10 +8,17 @@ import arrowleft from "@image/arrowleft.png";
 import arrowright from "@image/arrowright.png";
 
 export default function Groove() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
-    <section className="text-white py-16 px-4">
+    <section className="text-white py-16 px-4" data-aos="fade-up">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-16">
-        <div>
+        <div data-aos="fade-right">
           <h2 className="pl-3 sm:pl-4 text-4xl md:text-5xl font-bold mb-4 leading-tight">
             How it worked
             <br />
@@ -36,7 +46,7 @@ export default function Groove() {
             </button>
           </div>
         </div>
-        <div className="p-6 rounded-lg flex flex-col items-start">
+        <div className="p-6 rounded-lg flex flex-col items-start" data-aos="fade-left">
           <div className="flex items-start mb-4">
             <img src={grooveLogo} alt="Groove Logo" className="h-16 mr-4" />
             <div className="text-left">

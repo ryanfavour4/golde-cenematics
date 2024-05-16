@@ -4,6 +4,7 @@ import StartJourney from "@layouts/journey/Startjourney";
 import Marketplace from "@layouts/market-section/MarketSection";
 import Navbar from "@layouts/navbar/Navbar";
 import ScreeningProcess from "@layouts/screeningprocess/ScreeningProcess";
+import SkewedBackgroundSection from "@layouts/SkewedSection/SkewedSection";
 import WhyChooseZwilt from "@layouts/WhyChooseZwilt/WhyChooseZwilt";
 import Faq from "@layouts/Faq";
 import Footer from "@layouts/Footer";
@@ -13,33 +14,38 @@ export default function LandingPage() {
         <div>
             <div className="bg-light text-dark w-full">
                 {/* Hero */}
-                <div className="wrapper md:w-4/5 w-full">
+                <div id="hero" className="wrapper md:w-4/5 w-full">
                     <Navbar />
                     <HeroSection />
                 </div>
+                <SkewedBackgroundSection />
                 {/* Marketplace */}
-                <div className="market-section-bg">
-                    <Marketplace />
-                </div>
-                {/* Our Story */}
-                <div className="pt-52">
-                    <div className="uppercase border border-primary bg-primary/10 w-fit py-2 px-4 font-light text-xl m-auto">
-                        <h3>Our Story</h3>
+                <div
+                    id="marketplace"
+                    className="relative overflow-hidden bg-[#EDEFFF] transform -skew-y-3 market-section-bg"
+                >
+                    <div className="relative skew-y-3">
+                        <Marketplace />
                     </div>
-
-                    <h1 className="text-4xl md:text-8xl text-center uppercase mt-7 mb-7">
-                        Meet <span className="text-primary">John</span>
-                    </h1>
-
-                    <div className=""></div>
                 </div>
-                {/* {groove} */}
-                <div className="groove-bg">
-                    <Groove />
+                {/* Groove */}
+                <div
+                    id="groove"
+                    className="relative overflow-hidden bg-[#202229] transform -skew-y-3"
+                >
+                    <div className="relative skew-y-3 groove-bg">
+                        <Groove />
+                    </div>
                 </div>
-                <ScreeningProcess />
-                <StartJourney />
-                <WhyChooseZwilt />
+                <div id="screening-process">
+                    <ScreeningProcess />
+                </div>
+                <div id="start-journey">
+                    <StartJourney />
+                </div>
+                <div id="why-choose-zwilt">
+                    <WhyChooseZwilt />
+                </div>
                 <Faq />
                 <Footer />
             </div>
