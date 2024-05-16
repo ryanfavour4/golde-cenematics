@@ -12,11 +12,11 @@ export default function Navbar() {
                     <img src={logo} alt="Logo" className="h-8 mr-2" />
                 </div>
                 <div className="hidden lg:flex space-x-4">
-                    <Link to="/find-work" className="hover:text-black">Find Work</Link>
-                    <Link to="/find-talent" className="hover:text-black">Find Talent</Link>
-                    <Link to="/articles" className="hover:text-black">Articles</Link>
-                    <Link to="/about-us" className="hover:text-black">About Us</Link>
-                    <Link to="/contact-us" className="hover:text-black">Contact Us</Link>
+                    <Link to="#why-choose-zwilt" className="hover:text-black">Find Work</Link>
+                    <Link to="#marketplace" className="hover:text-black">Find Talent</Link>
+                    <Link to="#groove" className="hover:text-black">Articles</Link>
+                    <Link to="#screening-process" className="hover:text-black">About Us</Link>
+                    <Link to="#start-journey" className="hover:text-black">Contact Us</Link>
                 </div>
                 <div className="hidden lg:flex space-x-4">
                     <button className="hover:text-black">Log In</button>

@@ -4,6 +4,7 @@ import StartJourney from "@layouts/journey/Startjourney";
 import Marketplace from "@layouts/market-section/MarketSection";
 import Navbar from "@layouts/navbar/Navbar";
 import ScreeningProcess from "@layouts/screeningprocess/ScreeningProcess";
+import SkewedBackgroundSection from "@layouts/SkewedSection/SkewedSection";
 import WhyChooseZwilt from "@layouts/WhyChooseZwilt/WhyChooseZwilt";
 
 export default function LandingPage() {
@@ -11,25 +12,32 @@ export default function LandingPage() {
         <div>
             <div className="bg-light text-dark w-full pb-6">
                 {/* Hero */}
-                <div className="wrapper md:w-4/5 w-full">
+                <div id="hero" className="wrapper md:w-4/5 w-full">
                     <Navbar />
-                    <HeroSection/>
+                    <HeroSection />
                 </div>
+                <SkewedBackgroundSection/>
                 {/* Marketplace */}
-<div className="relative overflow-hidden bg-[#EDEFFF] transform -skew-y-3 market-section-bg">
-  <div className="relative skew-y-3">
-    <Marketplace />
-  </div>
-</div>
-                {/* {groove} */}
-                <div className="relative overflow-hidden bg-[#202229] transform -skew-y-3">
-  <div className="relative skew-y-3 groove-bg">
-    <Groove />
-  </div>
-</div>
-               <ScreeningProcess/>
-               <StartJourney/>
-               <WhyChooseZwilt/>
+                <div id="marketplace" className="relative overflow-hidden bg-[#EDEFFF] transform -skew-y-3 market-section-bg">
+                    <div className="relative skew-y-3">
+                        <Marketplace />
+                    </div>
+                </div>
+                {/* Groove */}
+                <div id="groove" className="relative overflow-hidden bg-[#202229] transform -skew-y-3">
+                    <div className="relative skew-y-3 groove-bg">
+                        <Groove />
+                    </div>
+                </div>
+                <div id="screening-process">
+                    <ScreeningProcess />
+                </div>
+                <div id="start-journey">
+                    <StartJourney />
+                </div>
+                <div id="why-choose-zwilt">
+                    <WhyChooseZwilt />
+                </div>
             </div>
         </div>
     );
