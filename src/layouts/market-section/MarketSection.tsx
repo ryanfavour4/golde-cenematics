@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import shopify from "@image/Frame 626618.png";
 import magnito from "@image/Frame 626619.png";
 import net from "@image/Frame 626.png";
@@ -95,8 +97,15 @@ const icons: Record<IconKey, JSX.Element> = {
 };
 
 export default function Marketplace() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animation in milliseconds
+      easing: 'ease-in-out', // Easing function for the animation
+    });
+  }, []);
+
   return (
-    <main className="flex flex-col items-center mt-16 px-4 text-center">
+    <main className="flex flex-col items-center mt-16 px-4 text-center" data-aos="fade-up">
       <h1 className="text-4xl md:text-6xl font-bold mb-4 pt-32">
         <span className="block mb-4">
           Your one-stop marketplace for finding
@@ -107,9 +116,9 @@ export default function Marketplace() {
       </h1>
       <div className="flex flex-col items-center mt-8 md:mt-16 px-2 md:px-4 text-center py-8 md:py-12 w-full">
         {sections.map((section, index) => (
-          <div key={index} className="w-full max-w-7xl flex flex-col md:flex-row items-start mb-8 md:mb-16">
+          <div key={index} className="w-full max-w-7xl flex flex-col md:flex-row items-start mb-8 md:mb-16" data-aos="fade-up">
             {/* Left Section */}
-            <div className="w-full md:w-1/3 mb-4 md:mb-0 text-left md:mr-auto">
+            <div className="w-full md:w-1/3 mb-4 md:mb-0 text-left md:mr-auto" data-aos="fade-right">
               <h1 className="text-2xl md:text-3xl font-semibold mb-2 md:mb-4">{section.left.title}</h1>
               <div className="text-purple-600 space-y-2 md:space-y-4">
                 <div className="flex items-center justify-between space-x-2 md:space-x-4">
@@ -127,12 +136,12 @@ export default function Marketplace() {
               </div>
             </div>
             {/* Right Section */}
-            <div className="w-full md:w-1/2 bg-white p-4 md:p-8 rounded-md shadow-md md:ml-auto">
+            <div className="w-full md:w-1/2 bg-white p-4 md:p-8 rounded-md shadow-md md:ml-auto" data-aos="fade-left">
               <h2 className="text-lg font-semibold mb-2 md:mb-4">{section.right.title}</h2>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-4">
                 {section.right.items.map((item, idx) => (
                   <div key={idx} className="text-center">
-                    <img src={item.img} alt={item.text} className="mx-auto mb-1 md:mb-2" />
+                    <img src={item.img} alt={item.text} className="mx-auto mb-1 md:mb-2" data-aos="zoom-in" />
                     <span className="text-sm md:text-xs">{item.text}</span> {/* Updated text size */}
                   </div>
                 ))}
@@ -141,7 +150,7 @@ export default function Marketplace() {
           </div>
         ))}
         {/* Explore More Section */}
-        <div className="flex flex-col md:flex-row items-center w-full max-w-7xl px-2 md:px-4 mt-4 md:mt-8">
+        <div className="flex flex-col md:flex-row items-center w-full max-w-7xl px-2 md:px-4 mt-4 md:mt-8" data-aos="fade-up">
           <div className="flex items-center space-x-2 text-black p-2 rounded">
             <img src={explore} alt={"explore-button"} className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-1 md:mb-2" />
             <span className='text-sm md:text-xl'>Explore More</span>

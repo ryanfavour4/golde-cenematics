@@ -16,13 +16,17 @@ export default function LandingPage() {
                     <HeroSection/>
                 </div>
                 {/* Marketplace */}
-                <div className="market-section-bg">
-                    <Marketplace/>
-                </div>
+<div className="relative overflow-hidden bg-[#EDEFFF] transform -skew-y-3 market-section-bg">
+  <div className="relative skew-y-3">
+    <Marketplace />
+  </div>
+</div>
                 {/* {groove} */}
-               <div className="groove-bg">
-               <Groove/>
-               </div>
+                <div className="relative overflow-hidden bg-[#202229] transform -skew-y-3">
+  <div className="relative skew-y-3 groove-bg">
+    <Groove />
+  </div>
+</div>
                <ScreeningProcess/>
                <StartJourney/>
                <WhyChooseZwilt/>
