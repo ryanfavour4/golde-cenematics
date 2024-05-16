@@ -5,11 +5,13 @@ import Marketplace from "@layouts/market-section/MarketSection";
 import Navbar from "@layouts/navbar/Navbar";
 import ScreeningProcess from "@layouts/screeningprocess/ScreeningProcess";
 import WhyChooseZwilt from "@layouts/WhyChooseZwilt/WhyChooseZwilt";
+import Faq from "@layouts/Faq";
+import Footer from "@layouts/Footer";
 
 export default function LandingPage() {
     return (
         <div>
-            <div className="bg-light text-dark w-full pb-6">
+            <div className="bg-light text-dark w-full">
                 {/* Hero */}
                 <div className="wrapper md:w-4/5 w-full">
                     <Navbar />
@@ -32,12 +34,14 @@ export default function LandingPage() {
                     <div className=""></div>
                 </div>
                 {/* {groove} */}
-               <div className="groove-bg">
-               <Groove/>
-               </div>
-               <ScreeningProcess/>
-               <StartJourney/>
-               <WhyChooseZwilt/>
+                <div className="groove-bg">
+                    <Groove />
+                </div>
+                <ScreeningProcess />
+                <StartJourney />
+                <WhyChooseZwilt />
+                <Faq />
+                <Footer />
             </div>
         </div>
     );
